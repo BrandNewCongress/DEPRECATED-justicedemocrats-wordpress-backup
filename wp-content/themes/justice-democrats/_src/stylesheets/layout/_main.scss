@@ -1,0 +1,70 @@
+// ================================
+// Main
+// ================================
+
+main {
+  overflow: hidden;
+}
+
+
+// --------------------------------
+// Spacing
+// --------------------------------
+
+.spacing--xs {
+  padding-top: rem(20px);
+  padding-bottom: rem(20px);
+}
+
+.spacing--sm {
+  padding-top: rem(40px);
+  padding-bottom: rem(40px);
+}
+
+.spacing--md {
+  padding-top: rem(60px);
+  padding-bottom: rem(60px);
+}
+
+.spacing--lg {
+  padding-top: rem(60px);
+  padding-bottom: rem(60px);
+
+  @include media(">=lg") {
+    padding-top: rem(100px);
+    padding-bottom: rem(100px);
+  }
+}
+
+.spacing-top--sm {
+  padding-top: rem(30px);
+}
+
+.spacing-bottom--lg {
+  padding-bottom: rem(80px);
+}
+
+.heading-section {
+  @extend %heading-section;
+}
+
+.act-now {
+  background-color: #f4f4f4;
+  padding: rem(40px 20px);
+
+  @include media(">=md") {
+    padding: rem(40px);
+  }
+}
+
+.content-heading {
+  display: block;
+  @include setfont(roboto-condensed);
+  font-weight: 700;
+  font-size: rem(26px);
+  color: #2B5058;
+  text-transform: uppercase;
+  padding-bottom: rem(25px);
+  margin-bottom: rem(50px);
+  border-bottom: rem(7px) solid #373737;
+}
